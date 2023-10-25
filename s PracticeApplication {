@@ -1,0 +1,27 @@
+warning: in the working copy of 'pom.xml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/practice/practice/PracticeApplication.java', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/pom.xml b/pom.xml[m
+[1mindex a9faa08..81486b8 100644[m
+[1m--- a/pom.xml[m
+[1m+++ b/pom.xml[m
+[36m@@ -17,6 +17,10 @@[m
+ 		<java.version>17</java.version>[m
+ 	</properties>[m
+ 	<dependencies>[m
+[32m+[m		[32m<dependency>[m
+[32m+[m			[32m<groupId>org.springframework.boot</groupId>[m
+[32m+[m			[32m<artifactId>spring-boot-starter-jdbc</artifactId>[m
+[32m+[m		[32m</dependency>[m
+ 		<dependency>[m
+ 			<groupId>org.springframework.boot</groupId>[m
+ 			<artifactId>spring-boot-starter-data-jpa</artifactId>[m
+[1mdiff --git a/src/main/java/com/practice/practice/PracticeApplication.java b/src/main/java/com/practice/practice/PracticeApplication.java[m
+[1mindex 97db40b..bea6a37 100644[m
+[1m--- a/src/main/java/com/practice/practice/PracticeApplication.java[m
+[1m+++ b/src/main/java/com/practice/practice/PracticeApplication.java[m
+[36m@@ -9,5 +9,4 @@[m [mpublic class PracticeApplication {[m
+ 	public static void main(String[] args) {[m
+ 		SpringApplication.run(PracticeApplication.class, args);[m
+ 	}[m
+[31m-[m
+ }[m
